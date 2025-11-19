@@ -31,8 +31,8 @@ This project recreates a minimal Chrome Dino-style game running on an Arduino us
 
 **Button**
 
-* One side → Pin 2
-* Other side → GND
+* A → Pin 2
+* D → GND
 
 Using internal pull-up: `pinMode(BTN, INPUT_PULLUP);`
 
