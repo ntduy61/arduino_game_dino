@@ -1,12 +1,63 @@
-Dino 404 Arduino – Rolling Ball Dino & Triangle Cactus
-This project recreates the Chrome Dino game but runs on an Arduino using an SH1106 OLED screen. The Dino character is a 16x16 rolling circle with a small animation line to show rotation. Obstacles are triangle-shaped cactuses, and the ground is drawn with small square tiles for better visual style. Score increases when the obstacle resets.
+# Dino 404 Arduino (SH1106 OLED Version)
 
-Press button to jump
+This project recreates a minimal Chrome Dino-style game running on an Arduino using an SH1106 OLED screen. The Dino character is represented as a rolling 16x16 circle with a simple rotation animation. Obstacles are triangle-shaped cactuses, and the ground is drawn with tiled squares. The game includes jump mechanics, collision detection, scoring, and a restart screen.
 
-Avoid the triangle cactus
+## Features
 
-Rolling animation while running
+* Smooth rolling animation for the Dino
+* Small jump for a responsive gameplay feel
+* Triangle cactus obstacle
+* Ground rendered using small 4x4 tiles
+* Score counter
+* Game Over + restart logic
 
-Game Over → press button to restart
+## Hardware Requirements
 
-Libraries used: Adafruit_GFX, Adafruit_SH110X.
+* Arduino (UNO/Nano/Pro Mini)
+* SH1106 128x64 OLED display (I2C)
+* Push button (jump control)
+* Optional: resistor for button
+
+## Wiring
+
+**OLED SH1106**
+
+* VCC → 5V
+* GND → GND
+* SCL → A5
+* SDA → A4
+
+**Button**
+
+* One side → Pin 2
+* Other side → GND
+
+Using internal pull-up: `pinMode(BTN, INPUT_PULLUP);`
+
+## Libraries Used
+
+* Adafruit_GFX
+* Adafruit_SH110X
+
+Make sure to install these libraries via the Arduino Library Manager.
+
+## How to Play
+
+* Press the button to make the Dino jump.
+* Avoid hitting the cactus.
+* Each time the obstacle resets, your score increases.
+* When you lose, press the button again to restart.
+
+## Code
+
+The main game logic includes:
+
+* Player physics (gravity + jump)
+* Rolling animation frames
+* Obstacle movement
+* Collision detection
+* Drawing the ground, Dino, cactus, and score
+
+## License
+
+Free to use, modify, and experiment with in your Arduino projects.
