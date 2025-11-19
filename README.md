@@ -26,6 +26,7 @@ This project recreates a minimal Chrome Dino-style game running on an Arduino us
 * GND → GND
 * SCK → A5
 * SDA → A4
+![20251120_001402](https://github.com/user-attachments/assets/a730edb4-e338-4ff7-8e92-2f9ec5ae6e96)
 
 **Button**
 
@@ -33,6 +34,7 @@ This project recreates a minimal Chrome Dino-style game running on an Arduino us
 * Other side → GND
 
 Using internal pull-up: `pinMode(BTN, INPUT_PULLUP);`
+![20251120_001402](https://github.com/user-attachments/assets/24f563e2-caac-4b46-a41b-5924be8b88a0)
 
 ## Libraries Used
 
