@@ -24,7 +24,7 @@ This project recreates a minimal Chrome Dino-style game running on an Arduino us
 
 * VCC → 5V
 * GND → GND
-* SCL → A5
+* SCK → A5
 * SDA → A4
 
 **Button**
